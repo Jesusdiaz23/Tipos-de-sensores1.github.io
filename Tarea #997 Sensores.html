@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sensores – Framework de presentación HTML</title>
+    <meta name="description" content="Presentación interactiva sobre sensores usando HTML">
+    <meta name="author" content="Jesus Noel Diaz Delgado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Sensores</h1>
+                <h3>Principios Básicos y Aplicaciones</h3>
+                <p><small>Presentado por <strong>Jesus Noel Diaz Delgado</strong></small></p>
+                <p><small>Materia: Sistemas Programables</small></p>
+            </section>
+
+            <section>
+                <h2>¿Qué es un sensor?</h2>
+                <p>Dispositivo que detecta eventos y proporciona una señal de salida, crucial para la automatización y control.</p>
+            </section>
+
+            <section>
+                <h2>Tipos de Sensores</h2>
+                <ul>
+                    <li>Ópticos</li>
+                    <li>Temperatura</li>
+                    <li>Presión</li>
+                    <li>Proximidad</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Sensor Óptico</h2>
+                <ul>
+                    <li><strong>Tipos:</strong> Cámaras (capturan imágenes), sensores de luz (detectan niveles de iluminación), fibras ópticas (transmiten datos por luz).</li>
+                    <li><strong>Funcionamiento:</strong> Capturan luz, convierten a señales eléctricas, transmiten datos a alta velocidad.</li>
+                    <li><strong>Características:</strong> Resolución, sensibilidad, ancho de banda, flexibilidad.</li>
+                    <li><strong>Comunicación:</strong> Transmiten datos analógicos/digitales y señales eléctricas.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Sensor de Temperatura</h2>
+                <ul>
+                    <li><strong>Tipos:</strong> Termómetros de mercurio (expansión), termopares (unión de metales), termistores (cambio de resistencia).</li>
+                    <li><strong>Funcionamiento:</strong> La expansión del mercurio, generación de tensión eléctrica, variación de resistencia.</li>
+                    <li><strong>Características:</strong> Precisión, rango, alta sensibilidad, rápida respuesta.</li>
+                    <li><strong>Comunicación:</strong> Lecturas visuales y señales eléctricas a dispositivos de medición.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Sensor de Presión</h2>
+                <ul>
+                    <li><strong>Tipos:</strong> Manómetros (presión de fluidos), barómetros (atmosférica), transductores (señales eléctricas).</li>
+                    <li><strong>Funcionamiento:</strong> Tubos en U, presión sobre columna de líquido, conversión a señales eléctricas.</li>
+                    <li><strong>Características:</strong> Precisión, rango operativo, linealidad, calibración.</li>
+                    <li><strong>Comunicación:</strong> Lecturas visuales/digitales, envío de señales eléctricas.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Sensor de Proximidad</h2>
+                <ul>
+                    <li><strong>Tipos:</strong> Inductivos (metálicos), capacitivos (no metálicos), ultrasónicos (ondas sonoras).</li>
+                    <li><strong>Funcionamiento:</strong> Campos electromagnéticos, medición de capacitancia, reflexión de ondas ultrasónicas.</li>
+                    <li><strong>Características:</strong> Resistencia a entornos hostiles, sensibilidad, rango de detección.</li>
+                    <li><strong>Comunicación:</strong> Señales eléctricas analógicas/digitales a sistemas de control.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Visualización de Datos</h2>
+                <p>Los datos de los sensores pueden representarse gráficamente mediante gráficos y diagramas para análisis y toma de decisiones.</p>
+            </section>
+
+            <section>
+                <h2>Conclusiones</h2>
+                <ul>
+                    <li>Los sensores son esenciales en la vida moderna.</li>
+                    <li>Existen múltiples tipos según su aplicación.</li>
+                    <li>Son claves en áreas como la automatización y la medicina.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Gracias</h2>
+            </section>
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            transition: 'slide',
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true },
+                { src: 'plugin/notes/notes.js', async: true }
+            ]
+        });
+    </script>
+</body>
+
+</html>
